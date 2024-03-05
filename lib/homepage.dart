@@ -94,6 +94,7 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       db.lst.add([text.text, false]);
       Navigator.of(context).pop();
+      text.text = "";
     });
     db.updatedata();
   }
